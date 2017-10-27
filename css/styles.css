@@ -1,0 +1,12 @@
+body {
+  background-image: url("../photos/background.jpeg");
+  background-repeat: no-repeat;
+}
+
+.intro-box {
+  background-color: white;
+  opacity: 0.7;
+  width: 600px;
+  height: 700px;
+  padding: 10px;
+}
