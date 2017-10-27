@@ -18,9 +18,20 @@ h1 {
   background-color: white;
   opacity: 0.8;
   width: 75%;
-  height: 80%;
-  padding: 25px 50px 25px 50px;
+  padding: 25px 50px 50px 50px;
   border-radius: 25px;
   margin: 0 auto;
   margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.btn-sm {
+  float: right;
+  margin-bottom: 50px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.glyphicon-arrow-right:hover {
+  color: #00a7bd;
 }
