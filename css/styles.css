@@ -4,16 +4,22 @@ body {
   background-repeat: no-repeat;
 }
 
+h1 {
+  font-family: sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
 .container{
   margin: 0 auto;
 }
 
 .intro-box {
   background-color: white;
-  opacity: 0.7;
+  opacity: 0.8;
   width: 75%;
   height: 80%;
-  padding: 10px;
+  padding: 25px 50px 25px 50px;
   border-radius: 25px;
   margin: 0 auto;
   margin-top: 50px;

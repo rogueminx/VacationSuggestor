@@ -10,8 +10,27 @@
   <body>
     <div class="container">
       <div class="intro-box">
-        <h1>Vacation Suggestor</h1>
+        <h1>VACATION SUGGESTOR</h1>
+        <hr>
         <p>Let us help you find your dream vacation! Just answer a few simple questions, and we'll tell you the perfect destination for your next adventure! </p>
+        <form class="vacationpicker">
+          <div class="form-group">
+            <label for="Name">First, what is your name?</label>
+            <input id="Name" type="text" class="form-control">
+          </div>
+          <label for="Heat">How warm do you like the weather to be?</label>
+          <div class="radio">
+            <label class="radio-inline"><input type="radio" name="Heat">Hot</label>
+            <label class="radio-inline"><input type="radio" name="Heat">Warm</label>
+            <label class="radio-inline"><input type="radio" name="Heat">Moderate</label>
+          </div>
+
+          <p><span class="glyphicon glyphicon-chevron-right" id="glyphicon01"></span></p>
+
+
+          <!-- <button type="submit" class="btn">Show me my perfect vacation!</button> -->
+
+        </form>
       </div>
     </div>
   </body>
