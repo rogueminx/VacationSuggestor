@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -10,57 +11,133 @@
   <body>
     <div class="container">
       <div id="intro-box">
-        <h1>VACATION SUGGESTOR</h1>
+        <h1>Vacation Suggestor</h1>
         <hr>
         <p>Let us help you find your dream vacation! Just answer a few simple questions, and we'll tell you the perfect destination for your next adventure! </p>
-        <form id="vacationpicker">
+        <form id="vacationPicker">
           <label for="Name">First, what is your name?</label>
           <input id="Name" type="text" class="form-control">
           <label for="Heat">How warm do you like the weather to be?</label>
-          <div class="radio-inline">
+          <div class="radio">
             <label>
-              <input type="radio" name="Heat" value="3">
+              <input type="radio" name="Heat" value="3" checked>
               Hot
             </label>
-            <label><input type="radio" name="Heat" value="2">Warm</label>
-            <label><input type="radio" name="Heat" value="1">Moderate/Cool</label>
           </div>
-          <label for="Kids">Do you plan to travel with kids or do you want something a bit more romantic?</label>
           <div class="radio">
-            <label class="radio-inline"><input type="radio" name="Kids" value="3">Traveling with kids</label>
-            <label class="radio-inline"><input type="radio" name="Kids" value="2">Just two of us</label>
-            <label class="radio-inline"><input type="radio" name="Kids" value="1">On my own adventure</label>
+            <label>
+              <input type="radio" name="Heat" value="2">
+              Warm
+            </label>
           </div>
-          <!-- <button type="button" class="btn btn-default btn-sm">
-            Next Page  <span class="glyphicon glyphicon-arrow-right" id="glyphicon01"></span>
-          </button> -->
+          <div class="radio">
+            <label>
+              <input type="radio" name="Heat" value="1">
+              Moderate/Cool
+            </label>
+          </div>
+          <label for="Kids">Who do you plan to travel with?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="Kids" value="3" checked>
+              Traveling with kids
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="Kids" value="2">
+              Just two of us
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="Kids" value="1">
+              On my own adventure
+            </label>
+          </div>
           <label for="Travel">Do you like to travel internationally?</label>
           <div class="radio">
-            <label class="radio-inline"><input type="radio" name="Travel" value="yes">Yes</label>
-            <label class="radio-inline"><input type="radio" name="Travel" value="no">No</label>
+            <label>
+              <input type="radio" name="Travel" value="yes" checked>
+              Yes
+            </label>
           </div>
-          <label for="Animals">Do you like animals?</label>
           <div class="radio">
-            <label class="radio-inline"><input type="radio" name="Animals" value="yes">Yes</label>
-            <label class="radio-inline"><input type="radio" name="Animals" value="no">No</label>
+            <label>
+              <input type="radio" name="Travel" value="no">
+              No
+            </label>
           </div>
-          <label for="History">Do you appreciate learning about history?</label>
+          <label for="Animal">Do you like animals?</label>
           <div class="radio">
-            <label class="radio-inline"><input type="radio" name="History" value="yes">Yes</label>
-            <label class="radio-inline"><input type="radio" name="History" value="1">No</label>
+            <label>
+              <input type="radio" name="Animal" value="yes" checked>
+              Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="Animal" value="no">
+              No
+            </label>
+          </div>
+          <label for="History">Do you like appreciate learning about history?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="History" value="yes" checked>
+              Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="History" value="no">
+              No
+            </label>
           </div>
           <label for="Lost">Do you like getting lost and finding secluded locations?</label>
           <div class="radio">
-            <label class="radio-inline"><input type="radio" name="Lost" value="yes">Yes</label>
-            <label class="radio-inline"><input type="radio" name="Lost" value="no">No</label>
+            <label>
+              <input type="radio" name="Lost" value="yes" checked>
+              Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="Lost" value="no">
+              No
+            </label>
           </div>
           <hr>
-          <button type="submit" class="btn">Show me my perfect vacation!</button>
-        </form>
-        <div id="output">
+          <button type="submit" class="btn">Tell me about my vacation!</button>
+      </div>
 
+      <div id="Bermuda">
+        <h1><span class="nameOutput"></span>, your perfect vacation is the Bermuda Triangle!</h1>
+        <hr>
+        <p>A perfect romantic vacation for an adventurous couple, your days will be filled with sunshine and sandy beaches. Spend your time drinking Mai Tais while listening to the sound of the crashing surf. Work on your tan while lounging for months in liferafts. Go snorkling for shipwrecks and dead bodies. Maybe you'll be lucky enough to add a new wreck (or body) to the bottom of the ocean! Planes work too - the sharks aren't fussy! </p>
+        <hr>
+        <label for="photos">Watch the slideshow to see some of the fun waiting for you:</label>
+        <div id="fadein">
+          <img src="photos/bermuda01.jpg" alt="Tanning possibilities">
+          <img src="photos/bermuda02.jpg">
+          <img src="photos/bermuda03.jpg">
+          <img src="photos/bermuda04.jpg">
+          <img src="photos/bermuda05.jpg">
         </div>
       </div>
-    </div>
+      <div id="DollIsland">
+        <h1><span class="nameOutput"></span>, your perfect vacation is  Doll Island!</h1>
+      </div>
+      <div id="SnakeIsland">
+        <h1><span class="nameOutput"></span>, your perfect vacation is Snake Island!</h1>
+      </div>
+      <div id="Winchester">
+        <h1><span class="nameOutput"></span>, your perfect vacation is the Winchester Mystery House!</h1>
+      </div>
+      <div id="BoneChapel">
+        <h1><span class="nameOutput"></span>, your perfect vacation is Bone Chapel!</h1>
+      </div>
+
+    </form>
   </body>
 </html>

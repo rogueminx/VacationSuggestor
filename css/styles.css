@@ -1,3 +1,25 @@
+
+
+#DollIsland {
+  display: none;
+}
+
+#SnakeIsland {
+  display: none;
+}
+
+#Winchester {
+  display: none;
+}
+
+#BoneChapel {
+  display: none;
+}
+
+#Name {
+  margin-bottom: 15px;
+}
+
 body {
   background-image: url("../photos/background.jpg");
   background-size: 100%;
@@ -26,8 +48,9 @@ h1 {
   margin-bottom: 50px;
 }
 
-#second-box {
-  display: none;
+#Bermuda {
+  /*display: none;*/
+  text-align: center;
   background-color: white;
   opacity: 0.8;
   width: 75%;
@@ -36,19 +59,4 @@ h1 {
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
-}
-
-#submit {
-  margin-top: 10px;
-}
-
-.btn-sm {
-  float: right;
-  margin-bottom: 50px;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.glyphicon-arrow-right:hover {
-  color: #00a7bd;
 }
