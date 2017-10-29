@@ -1,25 +1,3 @@
-
-
-#DollIsland {
-  display: none;
-}
-
-#SnakeIsland {
-  display: none;
-}
-
-#Winchester {
-  display: none;
-}
-
-#BoneChapel {
-  display: none;
-}
-
-#Name {
-  margin-bottom: 15px;
-}
-
 body {
   background-image: url("../photos/background.jpg");
   background-size: 100%;
@@ -33,8 +11,8 @@ h1 {
   text-align: center;
 }
 
-.container{
-  margin: 0 auto;
+#Name {
+  margin-bottom: 15px;
 }
 
 #intro-box {
@@ -49,7 +27,7 @@ h1 {
 }
 
 #Bermuda {
-  /*display: none;*/
+  display: none;
   text-align: center;
   background-color: white;
   opacity: 0.8;
@@ -59,4 +37,60 @@ h1 {
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+#DollIsland {
+  display: none;
+  text-align: center;
+  background-color: white;
+  opacity: 0.8;
+  width: 75%;
+  padding: 25px 50px 50px 50px;
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#SnakeIsland {
+  display: none;
+  text-align: center;
+  background-color: white;
+  opacity: 0.8;
+  width: 75%;
+  padding: 25px 50px 50px 50px;
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#Winchester {
+  display: none;
+  text-align: center;
+  background-color: white;
+  opacity: 0.8;
+  width: 75%;
+  padding: 25px 50px 50px 50px;
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#BoneChapel {
+  display: none;
+  text-align: center;
+  background-color: white;
+  opacity: 0.8;
+  width: 75%;
+  padding: 25px 50px 50px 50px;
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container{
+  margin: 0 auto;
 }

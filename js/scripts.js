@@ -69,46 +69,81 @@ $(document).ready(function() {
 
     debugger;
     if (bermuda > snakeIsland && bermuda > winchester && bermuda > boneChapel && bermuda > dollIsland) {
-    $("#intro-box").fadeOut(2000);
+    $("#intro-box").hide();
     $("body").css('background-image', 'url(photos/bermudabackground.jpg)');
     $("body").css('background-size', '100%');
     $("body").css('background-repeat', 'no-repeat');
     $("body").css('background-attachment', 'fixed');
-    $("#Bermuda").slideDown(2000);
+    $("#Bermuda").fadeIn(4000);
+    $(function(){
+      $('#fadein img:gt(0)').hide();
+      setInterval(function(){
+        $('#fadein :first-child').hide()
+           .next('img').fadeIn(2000)
+           .end().appendTo('#fadein');},
+        4000);
+    });
     } else if (dollIsland > snakeIsland && dollIsland > winchester && dollIsland > boneChapel && dollIsland > bermuda) {
-    $("#Bermuda").hide();
-    $("#DollIsland").show();
-    $("#SnakeIsland").hide();
-    $("#Winchester").hide();
-    $("#BoneChapel").hide();
+      $("#intro-box").hide();
+      $("body").css('background-image', 'url(photos/dollislandbackground.jpg)');
+      $("body").css('background-size', '100%');
+      $("body").css('background-repeat', 'no-repeat');
+      $("body").css('background-attachment', 'fixed');
+      $("#DollIsland").fadeIn(4000);
+      $(function(){
+        $('#fadein02 img:gt(0)').hide();
+        setInterval(function(){
+          $('#fadein02 :first-child').hide()
+             .next('img').fadeIn(2000)
+             .end().appendTo('#fadein02');},
+          4000);
+      });
     } else if (boneChapel > snakeIsland && boneChapel > winchester && boneChapel > dollIsland && boneChapel > bermuda) {
-    $("#Bermuda").hide();
-    $("#DollIsland").hide();
-    $("#SnakeIsland").hide();
-    $("#Winchester").hide();
-    $("#BoneChapel").show();
+      $("#intro-box").hide();
+      $("body").css('background-image', 'url(photos/bonesbackground.jpg)');
+      $("body").css('background-size', '100%');
+      $("body").css('background-repeat', 'no-repeat');
+      $("body").css('background-attachment', 'fixed');
+      $("#BoneChapel").fadeIn(4000);
+      $(function(){
+        $('#fadein05 img:gt(0)').hide();
+        setInterval(function(){
+          $('#fadein05 :first-child').hide()
+             .next('img').fadeIn(2000)
+             .end().appendTo('#fadein05');},
+          4000);
+      });
     } else if (snakeIsland > boneChapel && snakeIsland > winchester && snakeIsland > dollIsland && snakeIsland > bermuda) {
-    $("#Bermuda").hide();
-    $("#DollIsland").hide();
-    $("#SnakeIsland").show();
-    $("#Winchester").hide();
-    $("#BoneChapel").hide();
+      $("#intro-box").hide();
+      $("body").css('background-image', 'url(photos/snakeislandbackground.jpg)');
+      $("body").css('background-size', '100%');
+      $("body").css('background-repeat', 'no-repeat');
+      $("body").css('background-attachment', 'fixed');
+      $("#SnakeIsland").fadeIn(4000);
+      $(function(){
+        $('#fadein03 img:gt(0)').hide();
+        setInterval(function(){
+          $('#fadein03 :first-child').hide()
+             .next('img').fadeIn(2000)
+             .end().appendTo('#fadein03');},
+          4000);
+      });
     } else {
-    $("#Bermuda").hide();
-    $("#DollIsland").hide();
-    $("#SnakeIsland").hide();
-    $("#Winchester").show();
-    $("#BoneChapel").hide();
+      $("#intro-box").hide();
+      $("body").css('background-image', 'url(photos/winchesterbackground.jpg)');
+      $("body").css('background-size', '100%');
+      $("body").css('background-repeat', 'no-repeat');
+      $("body").css('background-attachment', 'fixed');
+      $("#Winchester").fadeIn(4000);
+      $(function(){
+        $('#fadein04 img:gt(0)').hide();
+        setInterval(function(){
+          $('#fadein04 :first-child').hide()
+             .next('img').fadeIn(2000)
+             .end().appendTo('#fadein04');},
+          4000);
+      });
     };
     event.preventDefault();
-  });
-
-  $(function(){
-    $('#fadein img:gt(0)').hide();
-    setInterval(function(){
-      $('#fadein :first-child').hide()
-         .next('img').fadeIn(2000)
-         .end().appendTo('#fadein');},
-      4000);
   });
 });
